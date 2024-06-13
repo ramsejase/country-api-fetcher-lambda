@@ -1,0 +1,11 @@
+spring.application.name: country-api-fetcher-lambda
+api:
+  endpoint: 
+    main: https://countriesnow.space
+    sub: /api/v0.1/countries
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    function:
+      definition: fetchCountries
